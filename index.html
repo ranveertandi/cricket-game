@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>
+    Bat ball stump game
+  </h1>
+  <button onclick="
+  // const userChoiceMsg='you have choice Bat';
+  let randomNumber = Math.random()*3;
+  let conputerchoice;
+  if (randomNumber >0 && randomNumber<=1) {
+   conputerchoice='Bat';
+  
+  }
+  else if(randomNumber >1 && randomNumber <=2){
+    conputerchoice='Ball';
+    
+  }
+   else{
+    conputerchoice='Stump'
+    
+   }
+  //  const conputerchoicemsg=`'conputerchoice is'${conputerchoice}`;
+let resultMsg;
+if (conputerchoice === 'Bat') {
+  resultMsg='match is tie';
+}
+else if(conputerchoice === 'Ball'){
+  resultMsg='user is win';
+}
+else if (conputerchoice === 'Stump'){
+  resultMsg='computer is win';
+}
+alert(`you have choice Bat . conputerchoice is ${conputerchoice} and ${resultMsg}`);
+ ">Bat</button>
+
+
+
+<button onclick="  randomNumber = Math.random()*3;
+ 
+if (randomNumber >0 && randomNumber<=1) {
+ conputerchoice='Bat';
+
+}
+else if(randomNumber >1 && randomNumber <=2){
+  conputerchoice='Ball';
+  
+}
+ else{
+  conputerchoice='Stump'
+  
+ }
+//  const conputerchoicemsg=`'conputerchoice is'${conputerchoice}`;
+
+if (conputerchoice === 'Bat') {
+resultMsg='computer is win';
+}
+else if(conputerchoice === 'Ball'){
+resultMsg='match is tie';
+}
+else if (conputerchoice === 'Stump'){
+resultMsg='user is win ';
+}
+alert(`you have choice Ball . conputerchoice is ${conputerchoice} and ${resultMsg}`);
+">Ball</button>
+<button onclick="
+randomNumber = Math.random()*3;
+if (randomNumber >0 && randomNumber<=1){
+  conputerchoice = 'Bat';
+} else if (randomNumber >1 && randomNumber<=2){
+  conputerchoice='Ball';
+} else {
+  conputerchoice='Stump';
+}
+if (conputerchoice==='Bat'){
+  resultMsg= 'computer is win ';
+}
+else if (conputerchoice==='Ball'){
+  resultMsg='user is win ';
+}
+else if (conputerchoice==='Stump'){
+  resultMsg='match is tie';
+}
+alert(`computer choice is stump. ${conputerchoice} and ${resultMsg}`)">Stump</button>
+</body>
+
+</html>
